@@ -13,8 +13,8 @@ public:
     ~Request();
 
     static int32_t handle(int fd);
-    static int32_t readFull(int fd, char *buffer, std::size_t n);
-    static int32_t writeAll(int fd, char *buffer, std::size_t n);
+    static int32_t readFull(int fd, char *buffer, size_t n);
+    static int32_t writeAll(int fd, char *buffer, size_t n);
 
 private:
     static const size_t kMaxMsg{4096};
