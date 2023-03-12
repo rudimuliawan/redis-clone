@@ -33,3 +33,6 @@
 
 # Build Folder
 cmake-build-debug
+
+# Clion Config folder
+.idea
