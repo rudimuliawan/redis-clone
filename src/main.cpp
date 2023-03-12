@@ -2,11 +2,14 @@
 // Created by rudi on 09/03/23.
 //
 
-#include <iostream>
+#include <cstdlib>
+
 #include <server.h>
 
-int main()
+int main(int argc, char* argv[])
 {
-    Server server{9000};
+    int port = atoi(argv[1]);
+
+    Server server{port};
     server.runForever();
 }
